@@ -1,6 +1,6 @@
 %define name gnome-splash-properties
 %define version 0.3.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: GNOME splash selector
 Name: %{name}
@@ -40,9 +40,10 @@ cat << EOF > %buildroot%{_menudir}/%{name}
         title="Splash" \
 	icon="%{name}.png"\
         longtitle="Splash selector" \
-	startup_notify="false" \
-        command="%{_bindir}/%{name}"
+        command="%{_bindir}/%{name}" \
+	xdg="true"
 EOF
+
 
 cp data/pixmaps/%{name}.png $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
 convert data/pixmaps/%{name}.png -geometry 32x32 $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
