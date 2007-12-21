@@ -10,6 +10,7 @@ URL: http://tchak13.free.fr/gnome-splash-properties/
 Source0: http://tchak13.free.fr/gnome-splash-properties/files/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/GNOME
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby-gnome2 ruby-gconf2 ruby-gnomevfs2
 BuildRequires: ruby ImageMagick
 BuildArch: noarch
