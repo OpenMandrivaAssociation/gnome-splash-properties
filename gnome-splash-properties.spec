@@ -31,18 +31,7 @@ ruby setup.rb install --prefix=$RPM_BUILD_ROOT
 # Menu
 ######
 
-mkdir -p %{buildroot}{%{_miconsdir},%{_iconsdir},%{_liconsdir},%{_menudir}}
 
-install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%name): needs="gnome" \
-        section="System/Configuration/GNOME" \
-        title="Splash" \
-	icon="%{name}.png"\
-        longtitle="Splash selector" \
-        command="%{_bindir}/%{name}" \
-	xdg="true"
-EOF
 
 
 cp data/pixmaps/%{name}.png $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
@@ -66,5 +55,4 @@ rm -rf %buildroot
 %{_liconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
-%{_menudir}/*
 %doc COPYING
