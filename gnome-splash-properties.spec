@@ -41,11 +41,15 @@ convert data/pixmaps/%{name}.png -geometry 16x16 $RPM_BUILD_ROOT%{_miconsdir}/%{
 %clean
 rm -rf %buildroot
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %update_menus
+%endif
 
 %files
 %defattr(-,root,root)
