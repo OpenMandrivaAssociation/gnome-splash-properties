@@ -12,7 +12,7 @@ License: GPL
 Group: Graphical desktop/GNOME
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby-gnome2 ruby-gconf2 ruby-gnomevfs2
-BuildRequires: ruby ImageMagick
+BuildRequires: ruby imagemagick
 BuildArch: noarch
 
 %description
