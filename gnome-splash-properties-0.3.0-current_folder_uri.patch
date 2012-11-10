@@ -1,0 +1,10 @@
+--- bin/gnome-splash-properties~	2005-11-17 00:04:09.000000000 +0100
++++ bin/gnome-splash-properties	2009-03-03 14:05:01.000000000 +0100
+@@ -117,7 +117,6 @@
+ 		[Gtk::Stock::CANCEL, Gtk::Dialog::RESPONSE_CANCEL],
+ 		[Gtk::Stock::OPEN, Gtk::Dialog::RESPONSE_ACCEPT])
+ 		@dialog.select_multiple = false
+-		@dialog.current_folder_uri = @cwd if @cwd != nil
+ 		filter = Gtk::FileFilter.new
+ 		filter.add_pixbuf_formats
+ 		@dialog.filter = filter
