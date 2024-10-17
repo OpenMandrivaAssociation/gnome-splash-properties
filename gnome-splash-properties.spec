@@ -6,7 +6,7 @@ Summary: GNOME splash selector
 Name: %{name}
 Version: %{version}
 Release: %{release}
-URL: http://tchak13.free.fr/gnome-splash-properties/
+URL: https://tchak13.free.fr/gnome-splash-properties/
 Source0: http://tchak13.free.fr/gnome-splash-properties/files/%{name}-%{version}.tar.bz2
 Patch0:	gnome-splash-properties-0.3.0-current_folder_uri.patch
 License: GPL
