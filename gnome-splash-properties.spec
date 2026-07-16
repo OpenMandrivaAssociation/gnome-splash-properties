@@ -1,6 +1,6 @@
 %define name gnome-splash-properties
 %define version 0.3.0
-%define release 8
+%define release 9
 
 Summary: GNOME splash selector
 Name: %{name}
